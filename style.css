@@ -6,6 +6,7 @@
 }
 body{
     background: #1f242d;
+    /* background: linear-gradient(45deg, #00d9ff 0%, #ff00b3 100%); */
     color: #fff;
 }
 .header{
@@ -65,14 +66,31 @@ body{
 
 .home-img img{
     /* background-color: #0ef; */
-    /* box-shadow: 0px 0px 10px 0px cyan; */
+    /* box-shadow: 0px 0px 10px 0px cyan;/ */
     max-width: 450px;
     margin-right: -20px;
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay: 2s, 3s;
+    /* display: inline-block; */
     /* border-radius: 50%; */
 }
+
+.home-img .asdf{
+    bo
+}
+
+.home .my-img{
+    height: 100px;
+    width: 100px;
+    float: right;
+    background-color: #0ef;
+    border-radius: 50%;
+    /* margin-top: 20px; */
+    /* visibility: hidden; */
+}
+
+
 
 .home-content h3{
     font-size: 32px;
@@ -123,7 +141,7 @@ body{
     font-size: 20px;
     color: #0ef;
     text-decoration: none;
-    margin: 30px 15px 30px 0;
+    margin: 20px 15px 30px 0;
     transition: .5s ease;
     opacity: 0;
     animation: slideRight 1s ease forwards;
@@ -215,4 +233,129 @@ body{
     100%{
         transform: translateY(0);
     }
+}
+
+
+
+
+@media(max-width:600px){
+    .header{
+        background-color: black;
+    }
+   
+    }
+    .home{
+        height: 700px;
+        /* float: left; */
+        /* background-color:chartreuse; */
+    }
+    /* .text-info{
+        font-size: 15px;
+    } */
+    .home .intro{
+        font-size: 20px;
+        /* margin-top: 100px; */
+    }
+    .home .name{
+        font-size: 30px;
+        margin-top: 3px;
+    }
+    .home .what-i-am{
+        font-size: 22px;
+        margin-top: 5px;
+    }
+    .home .my-intro{
+        font-size: 13px;
+        /* margin-top: 100px; */
+    }
+
+    .home-content .typed-output{
+        font-size: 15px;
+    }
+
+    .home-img{
+        /* display: none; */
+    }
+   
+
+    .home .my-img{
+        height: 100px;
+        width: 100px;
+        float: right;
+        background-color: #0ef;
+        border-radius: 50%;
+        /* margin-top: 20px; */
+        /* visibility: visible; */
+    }
+    .my-img{
+        height: 100%;
+        width: 100%;
+    }
+
+
+@media(min-width:601px){
+    .header{
+        background-color: red;
+    }
+}
+
+@media(min-width:1200px){
+    .header{
+        background-color: greenyellow;
+    }
+}
+
+@media(min-width:1400px){
+    .header{
+        background-color: blue;
+    }
+}
+
+/* front page ends here */
+
+
+
+
+/* about section starts here */
+
+.about{
+    height: 100vh;
+    width: 100%;
+    float: left;
+    background-color: #222836;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    /* float: left; */
+    /* background-color:#0ef; */
+}
+
+.box1{
+    height: 100%;
+    width: 50%;
+    float: left;
+    /* background-color: #222836; */
+}
+.box2{
+    height: 100%;
+    width: 50%;
+    float: left;
+    /* background-color: #222836; */
+    padding-top: 10%;
+}
+.box1 img{
+    height: 80%;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.box2 p{
+    /* text-indent: 15%; */
+}
+.box2 a{
+    margin-top: 50px;
+}
+.box2 span{
+    color: #0ef;
 }
